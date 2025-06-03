@@ -1,0 +1,98 @@
+
+      :root {
+        --green: hsl(75, 94%, 57%);
+        --white: hsl(0, 0%, 100%);
+        --grey-700: hsl(0, 0%, 20%);
+        --grey-800: hsl(0, 0%, 12%);
+        --grey-900: hsl(0, 0%, 8%);
+
+        --font-family: "Inter", sans-serif;
+
+        --font-size-paragraph: 0.9rem;
+        --font-weight-regular: 400;
+        --font-weight-semibold: 600;
+        --font-weight-bold: 700;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: var(--font-family);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .profile-bg {
+        display: grid;
+        background-color: var(--grey-900);
+        height: 100vh;
+        justify-items: center;
+        align-items: center;
+      }
+      .profile-container {
+        background-color: var(--grey-800);
+        max-width: 450px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--grey-800);
+        text-align: center;
+        align-items: center;
+        border-radius: 4%;
+        color: var(--white);
+      }
+
+      .name {
+        font-weight: var(--font-weight-bold);
+        font-size: 1.3rem;
+        margin: 5% 0 2% 0;
+      }
+      .location {
+        color: var(--green);
+        font-weight: var(--font-weight-semibold);
+        margin: 0 0 6% 0;
+      }
+
+      .des {
+        font-size: var(--font-size-paragraph);
+        margin: 0 0 3% 0;
+      }
+
+      .profile-container a {
+        display: block;
+        width: 70%;
+        margin: 10px auto;
+        padding: 15px 0;
+
+        background-color: var(--grey-700);
+
+        border-radius: 3%;
+      }
+
+      .profile-container a:hover{
+        background-color: var(--green);
+      }
+      .profile-container a:last-of-type {
+        margin-bottom: 10%;
+      }
+
+      a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: var(--font-weight-semibold);
+      }
+
+      .profile-image {
+        display: block;
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+        margin: 5% auto 0 auto;
+        object-fit: cover;
+      }
